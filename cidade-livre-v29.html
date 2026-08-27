@@ -246,7 +246,7 @@
   </div>
 
   <script type="module">
-    import * as THREE from './three.module.js';
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 
     const rnd = (a, b) => a + Math.random() * (b - a);
     const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -3541,8 +3541,8 @@
     const dayBtn = document.getElementById('dayBtn');
     let night = false;
     // === CONFIGURAÇÃO DO ONLINE: cole aqui a URL e a anon key do seu projeto Supabase ===
-    const SUPA_URL = 'https://gaxynlwtwodmpnfmeapb.supabase.co';
-    const SUPA_KEY = 'sb_publishable_IOx5koDaWPPmojWdjpf5jA_pLVQtYHH';
+    const SUPA_URL = 'COLE_AQUI_SUA_URL_SUPABASE';
+    const SUPA_KEY = 'COLE_AQUI_SUA_ANON_KEY';
     let mpChannel = null, chatShow = 0;
     const mpId = Math.random().toString(36).slice(2, 8);
     const remotes = new Map();
